@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://kit.fontawesome.com/790e7357b1.js"
+        crossorigin="anonymous"></script>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <p class="status">
+            <span>Câu: <span id="current-question"></span>/<span
+                    id="total-question"></span></span>
+            <span>
+                Đúng: <span id="total-correct-answer">0</span>
+                Sai: <span id="total-incorrect-answer">0</span>
+            </span>
+            <i id="audio-icon" class="fa-solid fa-volume-high"></i>
+        </p>
+
+        <p class="question"></p>
+
+        <div class="answer-box">
+            <button class="answer">answer 1</button>
+            <button class="answer">answer 2</button>
+            <button class="answer">answer 3</button>
+            <button class="answer">answer 4</button>
+        </div>
+
+        <table id="output-table" class="output-table">
+            <tbody>
+                <!-- <tr class="incorrect-answer">
+                    <td class="current-question">cau 1:</td>
+                    <td class="title">flskdjfsdlf</td>
+                    <td class="answer">sai</td>
+                    <td class=""><input type="checkbox"></td>
+                </tr> -->
+            </tbody>
+        </table>
+
+        <table id="answers-mark" class="output-table">
+            <tbody>
+                <!-- <td class="title">flskdjfsdlf</td>
+                <td class="answer">sai</td> -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="store.js"></script>
+    <script src="utilities.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
